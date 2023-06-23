@@ -31,9 +31,21 @@ const SignUp=()=>{
   const handleChange=(e)=>{
     setForm({...form,[e.target.name]:e.target.value})
 }
+
+const [redirectTo, setRedirectTo] = useState(null); // State to hold the website URL
+
+useEffect(() => {
+  if (redirectTo) {
+    window.location.href = redirectTo; // Redirect the user to the specified website
+  }
+}, [redirectTo]);
+
 const handleSubmit=(e)=>{
   e.preventDefault();
-      dispatch(signUp({...form,otp_token:otp_secret},navigate));  
+      dispatch(signUp({...form,otp_token:otp_secret},() => {
+        // Callback function executed after successful OTP verification
+        setRedirectTo('https://msmepayments.netlify.app/'); // Navigate to the dashboard screen
+      }));  
 }
 const handleSendOTP=async()=>{
   if(form.mobile_no.length===10)
@@ -52,6 +64,7 @@ const handleSendOTP=async()=>{
      notify("error","Enter valid phone number");
    }  
   }
+
 
   useEffect(()=>{
     window.scrollTo({
