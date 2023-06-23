@@ -1,0 +1,210 @@
+.banner{
+    margin-top: 100px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./../images/banner-bg.png")  ;
+    min-height: calc(100vh - 100px);
+    padding-top: 80px;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-pink{
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 30px;
+color: #F91974;
+margin-bottom: 20px;
+}
+.banner-content{
+    
+    width: 70%;
+    margin: 0 auto;
+}
+.pink-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+.pink-content img{
+    margin: 0 30px;
+}
+.pink-content span{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #F91974;
+}
+.banner-content .banner-btn{
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.img-left-text-box,.img-right-text-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    margin: 50px 0;
+}
+.img-left-text-box .content-box{
+    margin-left: 70px;
+}
+.img-right-text-box .content-box{
+    margin-right: 70px;
+}
+
+.content-box{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.content-box ul{
+    margin-bottom: 0;
+}
+.content-box .heading-main{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.image-box{
+    border: 3px solid #0085D0;
+border-radius: 3px;
+    position: relative;
+    height: 430px;
+width: 400px;
+}
+
+.image-box img{
+position: absolute;
+border-radius: 3px;
+height: 430px;
+width: 400px;
+
+object-fit: cover;
+    object-position: center;
+}
+.img-left-text-box .image-box img{
+    top: 20px;
+    left: 30px;
+}
+.img-right-text-box .image-box img{
+    top: 20px;
+    left: -30px;
+}
+
+.banner .home-straps{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.invoice-data{
+    width: 78%;
+    margin: 20px auto;
+}
+.invoice-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.invoice-item{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+}
+.invoice-item img{
+    margin-bottom: 10px;
+    height: 62px;
+}
+.invoice-item .title-pink{
+    margin: 10px 0;
+    text-align: center;
+}
+.invoice-item .content{
+    text-align: center;
+}
+
+.highlight{
+    color:#0085D0;
+}
+
+@media (max-width:800px)
+{
+    .img-left-text-box,.img-right-text-box{
+        padding: 50px 20px;
+        margin: 20px 0;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    .img-right-text-box{
+        flex-direction: column-reverse;
+       
+        
+    }
+    .img-left-text-box{
+        flex-direction: column;
+       
+    }
+    .img-left-text-box .content-box,.img-right-text-box .content-box{
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .img-left-text-box .image-box,.img-right-text-box .image-box{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:500px)
+{
+    .about-nav-small .about-nav-item{
+        border-bottom: none;
+    }
+    .highlight{
+        text-align: center;
+    }
+    .banner-content{
+        width: 95%;
+    }
+    .image-box,.image-box img{
+        height: 55vw;
+        width: 80vw;
+        object-fit: fill;
+    }
+    .img-left-text-box .image-box img{
+        top: 10px;
+        left: 15px;
+    }
+    .img-right-text-box .image-box img{
+        top: 10px;
+        left: -15px;
+    }
+    
+    .title-pink{
+        font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+    }
+    .invoice-content{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .invoice-item{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 460px){
+    .banner{
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+}

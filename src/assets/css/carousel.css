@@ -1,0 +1,134 @@
+
+.carousel-control-prev,.carousel-control-next{
+    display: none;
+}
+.carousel-indicators{
+    bottom:-45px;
+}
+.home-straps-content-small .carousel-indicators{
+    bottom: -50px;
+} 
+.carousel-indicators [data-bs-target]{
+    border: 2px solid #808285;
+    background: white;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active{
+    background: #808285;
+    height: 10px;
+    width: 10px;
+    opacity: 1;
+}
+.image-carousel{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 40vw;
+}
+.image-carousel-item{
+    margin-bottom: 50px;
+}
+.image-carousel-item img{
+    display: block;
+ 
+ height: 25vw;
+ margin: 0 auto;
+}
+.image-carousel-caption div:first-child{
+    color: white;
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 30px;
+text-align: center;
+}
+.image-carousel-caption div:last-child{
+    font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 26px;
+color: white;
+text-align: center;
+}
+.image-carousel .carousel-indicators{
+    bottom: 0;
+}
+.base{
+    margin: 10px 0 20px 0;
+}
+.image-carousel .carousel-indicators [data-bs-target]{
+    opacity: 1;
+    border: none;
+}
+.image-carousel .carousel-indicators .active{
+    height: 10px;
+    width: 28px;
+    background: #F91974;
+border-radius: 12px;
+}
+.base-nav,.base-socials{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.base-nav li:not(:last-child),.base-socials li:not(:last-child)
+{
+    margin-right: 35px;
+}
+.base-nav a{
+    font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.base-text{
+    font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 26px;
+color: white;
+text-align: center;
+}
+@media (max-width:800px) {
+    .image-carousel{
+        display: none;
+    }
+    .base-nav,.base-socials{
+        justify-content: flex-start;
+    }
+    .base-nav{
+        flex-wrap: wrap;
+    }
+    .base-nav a{
+        font-size: 12px;
+line-height: 22px;
+    }
+    .base-nav li:not(:last-child){
+        margin-right: 20px;
+    }
+}
+@media (max-width:500px){
+    .base-socials img{
+        height: 20px;
+    }
+    .carousel-indicators [data-bs-target]{
+        height: 5px;
+        width: 5px;
+    }
+    .carousel-indicators{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
